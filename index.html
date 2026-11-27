@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>維也納・瑞士旅遊行程</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F1ECE3;--card:#FAF8F3;--ink:#413C38;--coral:#C9A39A;--sun:#C8AD7F;--sky:#9DAFB5;--leaf:#A5B09A;--gold:#B8995A;--mute:#7B746D;--serif:'Noto Serif TC','Songti TC','PMingLiU',serif;--sans:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(58px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;font-size:15px}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;background:var(--paper);border-bottom:1.5px solid var(--ink);box-shadow:0 4px 0 -2px var(--gold);padding:env(safe-area-inset-top,0px) 8px 0;display:flex;gap:2px;overflow-x:auto;justify-content:safe center}
+nav a{flex:none;color:var(--ink);text-decoration:none;padding:14px 12px 12px;font-size:13px;letter-spacing:.16em;border-bottom:2px solid transparent}
+nav a:hover,nav a:focus{border-bottom-color:var(--gold)}
+main{max-width:640px;margin:0 auto;padding:calc(58px + 16px) 14px 60px}
+section{margin-top:34px}
+h2{position:relative;font-family:var(--serif);font-weight:700;font-size:19px;letter-spacing:.14em;margin:0 0 16px;padding-bottom:8px;border-bottom:1.5px solid var(--ink);display:flex;justify-content:space-between;align-items:center;gap:8px}
+h2::after{content:"";position:absolute;left:0;right:0;bottom:-5px;border-bottom:1px solid var(--gold)}
+.card{background:var(--card);border:1.5px solid var(--ink);border-radius:2px;outline:1px solid var(--gold);outline-offset:-6px;padding:16px 18px;margin-bottom:14px}
+.btn{font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:.08em;color:var(--ink);background:var(--sun);border:1.5px solid var(--ink);border-radius:2px;padding:5px 14px;cursor:pointer}
+.btn.sm{padding:2px 10px;font-size:12px;background:var(--card)}
+.btn.coral{background:var(--coral)}.btn.sky{background:var(--sky)}.btn.leaf{background:var(--leaf)}
+.btn:active{transform:scale(.96)}
+.empty{text-align:center;color:var(--mute);padding:20px 12px;border:1.5px dashed var(--mute);border-radius:2px;font-size:14px}
+.hero{background:var(--card);border:1.5px solid var(--ink);box-shadow:0 0 0 4px var(--paper),0 0 0 5.5px var(--gold);text-align:center;margin:6px 6px 0}
+.hero svg{display:block;width:100%;height:auto}
+.hero .txt{border-top:1.5px solid var(--ink);padding:18px 14px}
+.hero h1{margin:0;font-family:var(--serif);font-size:26px;font-weight:700;letter-spacing:.14em}
+.hero p{margin:6px 0 14px;color:var(--mute);letter-spacing:.1em;font-size:13px}
+.count{display:inline-block;border:1.5px solid var(--ink);outline:1px solid var(--gold);outline-offset:3px;padding:4px 22px;margin:4px 0 16px;letter-spacing:.14em;background:var(--card)}
+.count b{font-family:var(--serif);font-size:28px;color:#8A6F3D}
+.flight{display:flex;flex-direction:column;gap:6px}
+.flight .row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.flight .ap{font-family:var(--serif);font-size:24px;letter-spacing:.1em}
+.pill{display:inline-block;border:1.5px solid var(--ink);border-radius:2px;padding:0 8px;font-size:12px;letter-spacing:.08em;background:var(--sun)}
+.pill.must{background:var(--coral)}
+.acts{display:flex;gap:6px;justify-content:flex-end;flex-wrap:wrap}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 12px}
+.tab{flex:none;font-family:var(--sans);color:var(--ink);background:var(--card);border:1.5px solid var(--ink);border-radius:2px;padding:6px 12px;text-align:center;cursor:pointer;min-width:64px;letter-spacing:.06em;font-size:14px}
+.tab small{display:block;font-size:11px;color:var(--mute)}
+.tab.on{background:var(--ink);color:var(--card)}.tab.on small{color:#D9D2C6}
+.tab.on.pop{animation:pop .45s}
+.timeline{position:relative;padding-left:24px}
+.timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;border-left:1.5px solid var(--ink)}
+.item{position:relative}
+.item::before{content:"";position:absolute;left:-22px;top:22px;width:11px;height:11px;border:1.5px solid var(--ink);background:var(--card);transform:rotate(45deg)}
+.item.must::before{background:var(--coral)}
+.pop-in{animation:pop .45s}
+.time{font-size:13px;color:var(--mute);letter-spacing:.06em}
+.place{font-family:var(--serif);font-size:18px;font-weight:700;letter-spacing:.04em}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.tag{border:1.5px solid var(--ink);border-radius:2px;padding:0 8px;font-size:12px;letter-spacing:.08em}
+.chk{display:flex;align-items:center;gap:12px;padding:9px 4px;border-bottom:1px solid #D8D0C3}
+.chk:last-of-type{border-bottom:0}
+.box{flex:none;width:22px;height:22px;border:1.5px solid var(--ink);border-radius:2px;background:var(--card);cursor:pointer;display:grid;place-items:center;font-size:14px;padding:0;color:var(--ink)}
+.chk.done .box{background:var(--leaf)}
+.chk.done .t{text-decoration:line-through;color:var(--mute)}
+.chk .t{flex:1;word-break:break-word}
+.x{background:none;border:0;font:inherit;font-size:20px;color:var(--mute);cursor:pointer;padding:0 6px}
+.add{display:flex;gap:8px;margin-top:12px}
+.add input{flex:1;min-width:0}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--ink);border-radius:2px;padding:8px 12px;width:100%}
+.prog{font-family:var(--sans);font-size:12px;font-weight:400;letter-spacing:.08em;background:var(--sky);border:1.5px solid var(--ink);border-radius:2px;padding:0 10px}
+.ov{position:fixed;inset:0;background:rgba(65,60,56,.5);z-index:50;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--card);border:1.5px solid var(--ink);border-bottom:0;border-radius:2px 2px 0 0;width:100%;max-width:640px;max-height:88%;overflow:auto;padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));animation:up .3s}
+.sheet h3{margin:0 0 10px;font-family:var(--serif);letter-spacing:.1em}
+.sheet label{display:block;margin:10px 0 2px;font-size:13px;color:var(--mute);letter-spacing:.06em}
+.sheet .ck{display:flex;align-items:center;gap:8px;margin-top:14px}
+.sheet .ck input{width:22px;height:22px}
+.sheet .bar{display:flex;gap:8px;margin-top:18px;justify-content:flex-end}
+summary{cursor:pointer;font-family:var(--serif);font-weight:700;letter-spacing:.06em;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";float:right;color:var(--mute)}
+details[open] summary::after{content:"－"}
+details ol,.card ul{margin:10px 0 0;padding-left:20px}
+details li,.card li{margin-bottom:4px}
+body.ro footer,body.ro #editTrip,body.ro #editPay,body.ro #addFlight,body.ro #addItem,body.ro #addStay,body.ro #addBud,body.ro #budChips,body.ro #budLbl,body.ro #imp,body.ro #budSum~.time,body.ro #budSum~.add,body.ro [data-ef],body.ro [data-ei],body.ro [data-mv],body.ro [data-sort],body.ro [data-es],body.ro [data-eb]{display:none!important}
+.acts .btn.sm{padding:4px 12px}
+footer{text-align:center;font-size:12px;color:var(--mute);margin-top:38px;letter-spacing:.06em}
+.ring{animation:spin 50s linear infinite;transform-origin:0 0}
+.train{animation:chug 22s linear infinite}
+.puff{animation:puff 3s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.wh{animation:spin 3s linear infinite;transform-box:fill-box;transform-origin:center}
+.cloud1{animation:drift 10s ease-in-out infinite}
+.cloud2{animation:drift 14s ease-in-out infinite reverse}
+.glint{animation:glint 4s ease-in-out infinite}
+@keyframes drift{50%{transform:translateX(14px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes glint{50%{opacity:.6}}
+@keyframes chug{from{transform:translateX(-230px)}to{transform:translateX(260px)}}
+@keyframes puff{0%{transform:translate(0,0) scale(.5);opacity:.9}100%{transform:translate(-10px,-28px) scale(1.5);opacity:0}}
+@keyframes pop{0%{transform:scale(.9);opacity:.4}60%{transform:scale(1.04)}100%{transform:scale(1);opacity:1}}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">首頁</a><a href="#flights">航班</a><a href="#itin">行程</a><a href="#todo">待辦</a><a href="#stay">住宿</a><a href="#budget">預算</a><a href="#split">分帳</a><a href="#pre">出發前</a><a href="#pack">行李</a><a href="#tips">小抄</a><a href="#nearby">附近</a><a href="#sos">緊急</a>
+</nav>
+<main>
+<section id="home" style="margin-top:0">
+<div class="hero">
+<svg viewBox="0 0 400 280" aria-hidden="true">
+<defs><pattern id="ck" y="16" width="24" height="24" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#413C38"/><rect x="12" y="12" width="12" height="12" fill="#413C38"/></pattern></defs>
+<rect width="400" height="280" fill="#E6DFD2"/>
+<g fill="none" stroke="#B8995A" stroke-width="1.5" stroke-linecap="round"><path transform="translate(372,12)" d="M0 0a12 12 0 1 1 12 12a8 8 0 1 1-8-8a4 4 0 1 1 4 4"/><path transform="translate(28,12) scale(-1,1)" d="M0 0a12 12 0 1 1 12 12a8 8 0 1 1-8-8a4 4 0 1 1 4 4"/></g>
+<g class="cloud1" fill="none" stroke="#413C38" stroke-width="1.5" stroke-linecap="round"><path d="M360 52h32M366 58h22"/></g>
+<g class="cloud2" fill="none" stroke="#413C38" stroke-width="1.5" stroke-linecap="round"><path d="M84 60h44M92 66h30"/></g>
+<path d="M0 178L60 130 100 156 160 112 214 168 262 150 330 126 400 160V214H0Z" fill="#9DAFB5" stroke="#413C38" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M258 206L296 128 318 78 332 34 344 62 350 56 370 108 400 170V206Z" fill="#8E9EA3" stroke="#413C38" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M332 34L344 62 350 56 370 108 400 170V206H352L342 130 338 80Z" fill="#7C8D94" stroke="#413C38" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M318 78L332 34 344 62 350 56 346 70 338 64 332 74 326 66 322 82Z" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M0 200C70 184 140 188 210 198S340 194 400 196V256H0Z" fill="#A5B09A" stroke="#413C38" stroke-width="1.5"/>
+<g transform="translate(200,70)"><g class="ring"><circle r="46" fill="none" stroke="#413C38" stroke-width="1.5" stroke-dasharray="2 5"/></g>
+<circle r="40" fill="#C8AD7F" stroke="#413C38" stroke-width="1.5"/><circle r="43" fill="none" stroke="#B8995A" stroke-width="1"/><circle r="30" fill="none" stroke="#413C38" stroke-width="1.2"/><circle r="20" fill="none" stroke="#413C38" stroke-width="1.2"/><circle r="9" fill="#FAF8F3" stroke="#413C38" stroke-width="1.2"/></g>
+<rect x="60" y="160" width="110" height="44" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5"/>
+<path d="M56 160L84 128H146L174 160Z" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M80 142l8-7 8 7 8-7 8 7 8-7 8 7 8-7 8 7 8-7" fill="none" stroke="#C9A39A" stroke-width="2.5"/>
+<path d="M68 154l8-7 8 7 8-7 8 7 8-7 8 7 8-7 8 7 8-7 8 7 8-7 8 7" fill="none" stroke="#A5B09A" stroke-width="2.5"/>
+<path d="M164 140L176 124 188 140V204H164Z" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5" stroke-linejoin="round"/><rect x="172" y="156" width="8" height="14" fill="#413C38"/>
+<rect x="30" y="118" width="28" height="86" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5"/><rect x="40" y="140" width="8" height="16" fill="#413C38"/><rect x="40" y="170" width="8" height="16" fill="#413C38"/>
+<path d="M32 118L44 26 56 118Z" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5" stroke-linejoin="round"/><path d="M38.3 70H49.7M35 95H53M41.5 45H46.5" stroke="#413C38" stroke-width="1" fill="none"/><path d="M44 26V14M40 19h8" stroke="#B8995A" stroke-width="2" stroke-linecap="round"/>
+<rect x="76" y="176" width="30" height="28" fill="#413C38"/><path d="M76 176q15-14 30 0" fill="#413C38"/><path d="M118 168v36M130 168v36M142 168v36M154 168v36" stroke="#B8995A" stroke-width="1.5"/>
+<path d="M0 218H400" stroke="#413C38" stroke-width="1.5"/><path d="M0 222H400" stroke="#413C38" stroke-width="2" stroke-dasharray="2 5"/>
+<g transform="translate(170,0)"><g class="train">
+<rect x="-54" y="189" width="48" height="4" fill="#413C38"/><rect x="-52" y="193" width="44" height="16" rx="2" fill="#C8AD7F" stroke="#413C38" stroke-width="1.5"/><rect x="-46" y="197" width="8" height="6" fill="#FAF8F3"/><rect x="-34" y="197" width="8" height="6" fill="#FAF8F3"/><rect x="-22" y="197" width="8" height="6" fill="#FAF8F3"/>
+<path d="M-8 206H4" stroke="#413C38" stroke-width="2"/>
+<rect x="-2" y="205" width="44" height="5" fill="#413C38"/><rect x="8" y="190" width="32" height="15" rx="7" fill="#C9A39A" stroke="#413C38" stroke-width="1.5"/><path d="M12 198H36" stroke="#B8995A" stroke-width="1.5"/>
+<rect x="-4" y="180" width="16" height="25" fill="#C9A39A" stroke="#413C38" stroke-width="1.5"/><rect x="-6" y="177" width="20" height="4" fill="#413C38"/><rect x="0" y="186" width="7" height="7" fill="#FAF8F3" stroke="#413C38" stroke-width="1"/>
+<path d="M30 190L28 176H40L38 190Z" fill="#413C38"/><rect x="26" y="173" width="16" height="4" fill="#413C38"/><circle cx="20" cy="190" r="4" fill="#C8AD7F" stroke="#413C38" stroke-width="1.5"/><rect x="40" y="198" width="4" height="8" fill="#413C38"/>
+<g class="wh"><circle cx="-38" cy="213" r="5" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5"/><path d="M-43 213h10M-38 208v10" stroke="#413C38" stroke-width="1"/></g><g class="wh"><circle cx="-16" cy="213" r="5" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5"/><path d="M-21 213h10M-16 208v10" stroke="#413C38" stroke-width="1"/></g><g class="wh"><circle cx="6" cy="212" r="6" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5"/><path d="M0 212h12M6 206v12" stroke="#413C38" stroke-width="1"/></g><g class="wh"><circle cx="20" cy="212" r="6" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5"/><path d="M14 212h12M20 206v12" stroke="#413C38" stroke-width="1"/></g><g class="wh"><circle cx="34" cy="212" r="6" fill="#FAF8F3" stroke="#413C38" stroke-width="1.5"/><path d="M28 212h12M34 206v12" stroke="#413C38" stroke-width="1"/></g>
+<circle class="puff" cx="34" cy="168" r="5" fill="#FAF8F3" stroke="#413C38" stroke-width="1.2"/><circle class="puff" style="animation-delay:1s" cx="34" cy="168" r="5" fill="#FAF8F3" stroke="#413C38" stroke-width="1.2"/><circle class="puff" style="animation-delay:2s" cx="34" cy="168" r="5" fill="#FAF8F3" stroke="#413C38" stroke-width="1.2"/>
+</g></g>
+<path d="M14 236v7" stroke="#7E8A74" stroke-width="1"/><circle cx="14" cy="236" r="2.4" fill="#C9A39A" stroke="#413C38" stroke-width=".8"/><path d="M49 249v7" stroke="#7E8A74" stroke-width="1"/><circle cx="49" cy="249" r="2.4" fill="#9DAFB5" stroke="#413C38" stroke-width=".8"/><path d="M73 246v7" stroke="#7E8A74" stroke-width="1"/><circle cx="73" cy="246" r="2.4" fill="#C8AD7F" stroke="#413C38" stroke-width=".8"/><path d="M108 243v7" stroke="#7E8A74" stroke-width="1"/><circle cx="108" cy="243" r="2.4" fill="#FAF8F3" stroke="#413C38" stroke-width=".8"/><path d="M132 240v7" stroke="#7E8A74" stroke-width="1"/><circle cx="132" cy="240" r="2.4" fill="#C9A39A" stroke="#413C38" stroke-width=".8"/><path d="M156 237v7" stroke="#7E8A74" stroke-width="1"/><circle cx="156" cy="237" r="2.4" fill="#9DAFB5" stroke="#413C38" stroke-width=".8"/><path d="M191 250v7" stroke="#7E8A74" stroke-width="1"/><circle cx="191" cy="250" r="2.4" fill="#C8AD7F" stroke="#413C38" stroke-width=".8"/><path d="M215 247v7" stroke="#7E8A74" stroke-width="1"/><circle cx="215" cy="247" r="2.4" fill="#FAF8F3" stroke="#413C38" stroke-width=".8"/><path d="M239 244v7" stroke="#7E8A74" stroke-width="1"/><circle cx="239" cy="244" r="2.4" fill="#C9A39A" stroke="#413C38" stroke-width=".8"/><path d="M274 241v7" stroke="#7E8A74" stroke-width="1"/><circle cx="274" cy="241" r="2.4" fill="#9DAFB5" stroke="#413C38" stroke-width=".8"/><path d="M298 238v7" stroke="#7E8A74" stroke-width="1"/><circle cx="298" cy="238" r="2.4" fill="#C8AD7F" stroke="#413C38" stroke-width=".8"/><path d="M322 251v7" stroke="#7E8A74" stroke-width="1"/><circle cx="322" cy="251" r="2.4" fill="#FAF8F3" stroke="#413C38" stroke-width=".8"/><path d="M357 248v7" stroke="#7E8A74" stroke-width="1"/><circle cx="357" cy="248" r="2.4" fill="#C9A39A" stroke="#413C38" stroke-width=".8"/><path d="M381 245v7" stroke="#7E8A74" stroke-width="1"/><circle cx="381" cy="245" r="2.4" fill="#9DAFB5" stroke="#413C38" stroke-width=".8"/><g transform="translate(225,250)">
+<path d="M-26 2C-28-18-22-36-8-44C6-50 22-42 22-26 24-12 26-4 28 2Z" fill="#E9D8AA" stroke="#413C38" stroke-width="1.2" stroke-linejoin="round"/>
+<rect x="-22" y="-30" width="6" height="10" fill="#413C38"/><rect x="-14" y="-40" width="5" height="7" fill="#FAF8F3"/><rect x="-20" y="-12" width="7" height="9" fill="#413C38"/><rect x="-10" y="-22" width="5" height="7" fill="#FAF8F3"/><rect x="-12" y="-5" width="6" height="6" fill="#FAF8F3"/>
+<circle cx="12" cy="-14" r="3.5" fill="#C9A39A"/><circle cx="18" cy="-26" r="3" fill="#9DAFB5"/><circle cx="8" cy="-3" r="3" fill="#A5B09A"/><circle cx="20" cy="-8" r="2.5" fill="#C9A39A"/><circle cx="3" cy="-30" r="2.5" fill="#9DAFB5"/>
+<circle cx="10" cy="-46" r="6.5" fill="#F1E3D0" stroke="#413C38" stroke-width="1.2"/><circle cx="6" cy="-52" r="2.2" fill="#C9A39A"/><circle cx="11" cy="-53" r="2.2" fill="#9DAFB5"/><circle cx="15" cy="-49" r="2.2" fill="#A5B09A"/>
+<circle cx="-3" cy="-54" r="8" fill="#F1E3D0" stroke="#413C38" stroke-width="1.2"/><path d="M-11-56Q-3-68 6-55L4-51Q-3-60-10-52Z" fill="#413C38"/>
+<circle cx="14" cy="-38" r="2.6" fill="#F1E3D0" stroke="#413C38" stroke-width="1"/></g>
+<rect y="256" width="400" height="24" fill="#FAF8F3"/><rect y="256" width="400" height="24" fill="url(#ck)"/><path d="M0 256H400" stroke="#413C38" stroke-width="1.5"/>
+</svg>
+<div class="txt">
+<h1 id="hTitle"></h1><p id="hSub"></p>
+<div id="hCount"></div><div id='modeNote' class='time' style='margin-bottom:10px'></div>
+<button class="btn" id="editTrip">編輯旅程資料</button>
+</div></div>
+</section>
+
+<section id="flights"><h2>航班 <button class="btn sky" id="addFlight">＋ 新增</button></h2><div id="flightList"></div></section>
+
+<section id="itin"><h2>每日行程 <button class="btn leaf" id="addItem">＋ 新增</button></h2>
+<div class="tabs" id="tabs"></div><div class="timeline" id="timeline"></div></section>
+
+<section id="todo"><h2>待辦清單 <span class="prog" id="p-todos"></span></h2><div class="card" id="c-todos"></div></section>
+
+<section id="stay"><h2>住宿資訊 <button class="btn coral" id="addStay">＋ 新增</button></h2><div id="stayList"></div></section>
+
+<section id='budget'><h2>預算 <button class='btn sky' id='addBud'>＋ 新增大項</button></h2>
+<div class='card'><div id='budSum'></div><div class='time' style='margin-top:10px'>匯率（換算成新台幣，選填）</div><div class='add'><input id='rEUR' type='number' inputmode='decimal' placeholder='1 EUR = ? TWD'><input id='rCHF' type='number' inputmode='decimal' placeholder='1 CHF = ? TWD'></div></div>
+<div id='budLbl' class='time' style='margin:4px 0 8px'>快速新增大項：</div><div class='tags' id='budChips' style='margin-bottom:12px'></div><div id='budList'></div></section>
+<section id='split'><h2>分帳 <button class='btn sky' id='editPay'>設定連結</button></h2>
+<div class='card' id='payCard'></div></section>
+<section id="pre"><h2>出發前清單 <span class="prog" id="p-pre"></span></h2><div class="card" id="c-pre"></div></section>
+
+<section id="pack"><h2>行李清單 <span class="prog" id="p-pack"></span></h2><div class="card" id="c-pack"></div></section>
+
+<section id='tips'><h2>旅行小抄</h2>
+<div class='time' style='margin-bottom:10px'>整理自官方或公開資料，價格與規定可能調整，出發前請再確認。</div>
+<details class='card'><summary>交通與車票</summary><ul><li>維也納（2026 年起新制）：24 小時票 €10.20（App 數位版 €9.70）、7 日票 €28.90。48 與 72 小時票已在 2026/1/1 停售，天數不夠的話改買 7 日票或 24 小時票。</li><li>紙本票要在上車前打印：地鐵站入口的藍色打票機，電車與公車則在車內打。打票前不算有效，查票會罰款。</li><li>WienMobil App 買的電子票是記名的，查票時要搭配有姓名的附照片證件（護照）。</li><li>去機場超出市區核心區，要另外買票；機場快線 CAT 和機場巴士要向各業者另外買票。</li><li>瑞士：上車前先買好票（SBB App 或車站售票機），搭車前沒票可能被罰款。</li><li>瑞士通行證是否涵蓋某條景觀列車、是否要另付訂位費，請看官網。冰河快車、伯連納快車等需要訂位。</li></ul><div class='time' style='margin-top:8px'>資料來源：Wiener Linien、維也納旅遊局官網。</div></details>
+<details class='card'><summary>小費與付款</summary><ul><li>奧地利：餐廳帳單已含服務費，但習慣把帳單湊整或多給約 5–10%。付現時直接跟服務生說要付的總金額，不要把錢放在桌上。</li><li>瑞士：服務費已含在價格裡，湊整即可，不給也不失禮。</li><li>計程車通常也是湊整。</li><li>刷卡時如果機器問要用歐元／瑞士法郎還是新台幣結帳，選當地幣別，不要選新台幣，通常匯率較差。</li><li>信用卡大多通用，但市集、小咖啡館、山區的小店可能只收現金，帶一些零錢。</li></ul></details>
+<details class='card'><summary>營業時間與休息日</summary><ul><li>奧地利和瑞士大多數商店週日休息，車站、機場裡的商店和部分餐廳除外，週六就先補好需要的東西。</li><li>有些博物館週一休館，排行程前先查官網。</li><li>超市多半關得早，不要拖到晚上才買。</li><li>山區的纜車和山屋有季節性，營運時間以公司官網為準。</li></ul></details>
+<details class='card'><summary>退稅（持台灣護照可以申請）</summary><ul><li>奧地利：單張發票 €75.01 以上。購物時要店員開退稅單（Tax Free form），並附原始發票。</li><li>瑞士：同一家店單次購物 CHF 300 以上（含稅）。</li><li>離境時要把商品（未使用）、發票、退稅單和護照拿給海關蓋章，沒有章就退不了。</li><li>奧地利：購買後三個月內出口；瑞士：購買後 90 天內向海關驗證。</li><li>如果在維也納機場離開歐盟，可以用電子驗證（DEV）蓋章，數位退稅單會被扣約 €4 手續費。</li><li>退稅公司（如 Global Blue、Planet）會扣手續費，實拿比稅額少，常見在購物金額的 15% 以內。</li><li>行程是瑞士到奧地利再回台灣：瑞士那段要先問店家和退稅公司怎麼蓋章，通常要在離開瑞士時處理。</li><li>餐廳餐點和交通等服務通常不能退稅，只有可帶走的商品可以。</li></ul><div class='time' style='margin-top:8px'>資料來源：奧地利財政部、奧地利經濟商會、瑞士聯邦稅務局、Planet 退稅公司。</div></details>
+<details class='card'><summary>插座與電壓</summary><ul><li>奧地利是 F 型（圓形兩孔，C 型也通用），瑞士是 J 型（有三個孔的特殊形狀），電壓都是 230V。</li><li>台灣的扁插頭不能直接用，帶一個含歐規插頭的轉接頭，兩國都要確認可用。</li><li>吹風機、電捲棒等電器是不是 100–240V 的，先看機身標示，不是的話不要直接插。</li><li>手機和相機充電器多半是 100–240V，只需要轉接頭。</li></ul></details>
+<details class='card'><summary>飲水與廁所</summary><ul><li>奧地利和瑞士的自來水都可以直接喝，街上的噴泉通常也有標示能不能喝。</li><li>公共廁所常要收費，約 1 歐元或 1 瑞士法郎上下，火車站較常見，備一些零錢。</li><li>餐廳點水時說 Leitungswasser，就是自來水，價格比瓶裝水便宜。</li></ul></details>
+<details class='card'><summary>常用德語小抄</summary><ul><li>你好：Guten Tag（瑞士常說 Grüezi）</li><li>謝謝：Danke（瑞士也常聽到 Merci）</li><li>請／不客氣：Bitte</li><li>不好意思：Entschuldigung</li><li>你會說英語嗎？：Sprechen Sie Englisch?</li><li>我想要……：Ich hätte gern …</li><li>請給我帳單：Die Rechnung, bitte／Zahlen, bitte</li><li>多少錢？：Wie viel kostet das?</li><li>廁所在哪裡？：Wo ist die Toilette?</li><li>……在哪裡？：Wo ist …?</li><li>不用找了：Stimmt so</li><li>自來水：Leitungswasser</li><li>救命！：Hilfe!</li><li>我需要醫生：Ich brauche einen Arzt.</li></ul></details>
+<details class='card'><summary>手機與 App</summary><ul><li>網卡或 eSIM 要確認有涵蓋瑞士，瑞士不是歐盟。</li><li>奧地利火車用 ÖBB App，瑞士火車用 SBB Mobile，維也納市區交通用 WienMobil。</li><li>山區行程前，到纜車公司官網看當天營運公告和天氣。</li><li>離線地圖先下載好，山區和隧道裡常沒有訊號。</li></ul></details>
+</section>
+<section id='nearby'><h2>找我附近的</h2><div class='card'><div class='time' style='margin-bottom:10px'>點一下會用 Google 地圖搜尋。打開地圖後允許定位，就會顯示你附近的結果。</div><div class='tags' style='gap:8px'><a class='btn sm' style='text-decoration:none;padding:6px 14px' href='https://www.google.com/maps/search/?api=1&amp;query=restaurants%20near%20me' target='_blank' rel='noopener noreferrer'>餐廳</a><a class='btn sm' style='text-decoration:none;padding:6px 14px' href='https://www.google.com/maps/search/?api=1&amp;query=cafe%20near%20me' target='_blank' rel='noopener noreferrer'>咖啡廳</a><a class='btn sm' style='text-decoration:none;padding:6px 14px' href='https://www.google.com/maps/search/?api=1&amp;query=dessert%20bakery%20near%20me' target='_blank' rel='noopener noreferrer'>甜點</a><a class='btn sm' style='text-decoration:none;padding:6px 14px' href='https://www.google.com/maps/search/?api=1&amp;query=supermarket%20near%20me' target='_blank' rel='noopener noreferrer'>超市</a><a class='btn sm' style='text-decoration:none;padding:6px 14px' href='https://www.google.com/maps/search/?api=1&amp;query=pharmacy%20near%20me' target='_blank' rel='noopener noreferrer'>藥局</a><a class='btn sm' style='text-decoration:none;padding:6px 14px' href='https://www.google.com/maps/search/?api=1&amp;query=public%20toilet%20near%20me' target='_blank' rel='noopener noreferrer'>廁所</a><a class='btn sm' style='text-decoration:none;padding:6px 14px' href='https://www.google.com/maps/search/?api=1&amp;query=ATM%20near%20me' target='_blank' rel='noopener noreferrer'>ATM</a><a class='btn sm' style='text-decoration:none;padding:6px 14px' href='https://www.google.com/maps/search/?api=1&amp;query=train%20station%20near%20me' target='_blank' rel='noopener noreferrer'>車站</a><a class='btn sm' style='text-decoration:none;padding:6px 14px' href='https://www.google.com/maps/search/?api=1&amp;query=parking%20near%20me' target='_blank' rel='noopener noreferrer'>停車場</a><a class='btn sm' style='text-decoration:none;padding:6px 14px' href='https://www.google.com/maps/search/?api=1&amp;query=hospital%20near%20me' target='_blank' rel='noopener noreferrer'>醫院</a></div></div></section>
+<section id='sos'><h2>常見緊急情況</h2>
+<div class='time' style='margin-bottom:10px'>以下以持中華民國（台灣）護照的旅客為準。電話與地址整理自外交部領事事務局網站，出發前請再到官網核對一次。</div>
+<div class='card'><div class='place'>當地緊急電話</div><ul><li>通用緊急（警察、救護、消防）：<a href='tel:112'>112</a>，兩國都能撥</li><li>救護車：<a href='tel:144'>144</a>（奧地利、瑞士）</li><li>警察：奧地利 <a href='tel:133'>133</a>／瑞士 <a href='tel:117'>117</a></li><li>消防：奧地利 <a href='tel:122'>122</a>／瑞士 <a href='tel:118'>118</a></li><li>山區救援：奧地利 <a href='tel:140'>140</a>／瑞士空中救援 Rega <a href='tel:1414'>1414</a></li></ul></div>
+<div class='card'><div class='place'>台灣的求助管道</div><div class='time' style='margin:4px 0 6px'>外交部緊急聯絡中心，24 小時</div><ul><li>從國外撥（自付國際電話費）：<a href='tel:+886800085095'>+886-800-085-095</a>，奧地利、瑞士都能用</li><li>瑞士另有免付費：<a href='tel:0080008850885'>00-800-0885-0885</a>。限用瑞士門號 Sunrise、Orange、Swisscom 或市話，公用電話打不通。奧地利沒有免付費版本，請用上面的付費號碼</li><li>家人在台灣聯絡不到你時，可撥 <a href='tel:0800085095'>0800-085-095</a>（國內免付費）</li></ul><div class='time' style='margin:12px 0 6px'>駐奧地利臺北經濟文化代表處（維也納）</div><ul><li>急難救助（隨時）：奧地利境內 <a href='tel:06643450455'>0664-345-0455</a>，境外 <a href='tel:+436643450455'>+43-664-345-0455</a></li><li>地址：Wagramer Str. 19/11. OG, A-1220 Vienna</li><li>領務櫃檯：週一至週五 9:00–12:00，涵蓋奧地利全境</li></ul><div class='time' style='margin:12px 0 6px'>駐瑞士臺北文化經濟代表團（伯恩）</div><ul><li>緊急聯絡電話（非急難重大事件請勿撥）：<a href='tel:+41763366979'>+41 76 336 6979</a></li><li>電話：<a href='tel:+41313822927'>+41 31 382 2927</a> 或 <a href='tel:+41313508050'>+41 31 350 8050</a>，週一至週五 08:30–12:30、13:30–17:30</li><li>地址：Kirchenfeldstrasse 14, 3005 Bern</li></ul><div class='time' style='margin:12px 0 6px'>駐瑞士代表團日內瓦辦事處</div><ul><li>緊急聯絡電話：<a href='tel:+41797755751'>+41 79 775 5751</a></li><li>電話：<a href='tel:+41229197070'>+41 22 919 7070</a>（服務時間請看官網）</li><li>地址：56 Rue de Moillebeau, 1209 Genève</li><li>領務轄區：日內瓦邦、沃邦、諾夏特邦、瓦萊邦（策馬特在瓦萊邦）</li></ul><div class='time' style='margin-top:10px'>非急難的護照、簽證、文件問題，請在上班時間打館處電話，或外交部領事事務局 <a href='tel:+886223432888'>(02)2343-2888</a>。不是急難請不要撥緊急專線。</div><div class='acts' style='justify-content:flex-start;gap:8px;margin-top:10px;flex-wrap:wrap'><a class='btn sm' style='text-decoration:none' href='https://www.boca.gov.tw/np-87-1.html' target='_blank' rel='noopener noreferrer'>外交部專線說明</a><a class='btn sm' style='text-decoration:none' href='https://www.boca.gov.tw/sp-foof-countrycp-02-54-b0087-1.html' target='_blank' rel='noopener noreferrer'>奧地利館處</a><a class='btn sm' style='text-decoration:none' href='https://www.boca.gov.tw/sp-foof-countrycp-02-71-9a9e2-1.html' target='_blank' rel='noopener noreferrer'>瑞士館處</a></div></div>
+<details class='card'><summary>護照遺失或被偷</summary><ol><li>先到最近的警察局報案，請他們開「護照遺失報案證明」。如果警察不開，就自己寫一份遺失護照說明書。</li><li>聯絡上面的台灣駐外館處：奧地利找維也納代表處，瑞士找伯恩代表團，人在瓦萊邦或日內瓦一帶找日內瓦辦事處。上班時間打一般電話，下班或很急就打緊急聯絡電話。</li><li>二選一：在當地申請補發新護照，所需文件由館處告知；或是趕著回國，就申請「入國證明書」返國，回台灣後再申請補發護照。</li><li>如果要搭機而護照不見了，入國證明書要先向館處申請，不能等到機場。</li><li>回台灣補發護照，官方資料寫約需 11 個工作天，以領事事務局公告為準。</li><li>手機裡先存好護照影本和身分證照片，能加快館處確認身分。</li></ol><div class='time' style='margin-top:8px'>依據外交部領事事務局的護照補發說明，實際文件與流程以館處通知為準。</div></details>
+<details class='card'><summary>錢包或信用卡被偷</summary><ol><li>立刻用銀行 App 鎖卡，或打信用卡背面的海外客服電話（用國際電話，出發前先存好）。</li><li>到警察局報案，請他們開報案證明，旅平險理賠常會要。</li><li>改用備用卡和分開放的現金。</li><li>身上完全沒錢時，聯絡駐外館處說明狀況，詢問可以怎麼協助。</li><li>通知家人，請家人必要時協助聯絡銀行或匯款。</li></ol></details>
+<details class='card'><summary>生病或受傷</summary><ol><li>危急時撥 112 或 144，說出所在地點。</li><li>不危急就先打旅平險的緊急救援專線（保單上有），請他們指引可就醫的醫院和是否需要先墊付。</li><li>保留診斷證明、收據、病歷，回台灣理賠要用。</li><li>重大傷病或住院時，聯絡駐外館處說明，詢問可否協助聯繫台灣家屬。</li><li>在山區受傷，先撥 112，瑞士可撥 1414 呼叫空中救援，奧地利山區可撥 140。直升機救援的費用可能很高，出發前要確認保險涵蓋。</li></ol></details>
+<details class='card'><summary>行李遺失或延誤</summary><ol><li>不要離開機場，直接到行李櫃檯（Baggage Service）。</li><li>填寫行李異常報告（PIR），拿到案件編號，留好登機證和行李條。</li><li>留下住宿地址和電話，請航空公司把行李送到住宿。</li><li>延誤期間買的必需品留收據，向航空公司索賠，並向旅平險申請。</li><li>貴重物品和藥品一定要放隨身行李。</li></ol></details>
+<details class='card'><summary>航班延誤或取消</summary><ol><li>先看航空公司 App 有沒有自動改簽，再到櫃檯或打客服。</li><li>向航空公司要書面或電子的延誤、取消證明，保險理賠需要。</li><li>從歐盟飛出，或搭歐盟航空公司飛抵歐盟的航班，可能適用歐盟的旅客權益規定，是否可以請求補償要看原因和延誤時間。</li><li>通知後面的住宿、火車與預約行程，改期或延後。</li><li>保留延誤期間的餐飲與住宿收據。</li></ol></details>
+<details class='card'><summary>手機遺失或沒電</summary><ol><li>用另一個裝置到蘋果「尋找」或 Google「尋找我的裝置」鎖定手機。</li><li>打電信業者掛失 SIM，並鎖定銀行 App 和信用卡。</li><li>更改重要帳號密碼。</li><li>事先備份：行程截圖、離線地圖、住宿與車票 PDF，並把家人電話抄在紙上。</li><li>隨身帶行動電源。</li></ol></details>
+<details class='card'><summary>錯過火車或景觀列車</summary><ol><li>先到車站服務櫃檯或問列車長能不能改搭下一班。</li><li>彈性票通常可以改搭同一路線的下一班，指定車次的特價票不一定可以，請當場問站務人員。</li><li>景觀列車需要訂位，錯過後通常要重新訂位。</li><li>接下來的纜車、住宿或預約行程，打電話或用 App 通知對方改時間。</li><li>行程之間預留轉乘緩衝，不要排太緊。</li></ol></details>
+<details class='card'><summary>山區天氣突變或纜車停駛</summary><ol><li>出發前和當天早上查纜車公司官網或 App 的營運公告和天氣。</li><li>停駛就改走備案行程，不要冒險自己徒步下山。</li><li>迷路或受困：撥 112，瑞士也可撥 1414，保持保暖，留在原地，把手機定位分享給家人。</li><li>備好保暖衣物、水和行動電源。</li></ol></details>
+<details class='card'><summary>遇到詐騙、扒手或搶劫</summary><ol><li>街頭有人拿請願書請你簽名、玩小遊戲或假裝幫忙，常是分散注意力，直接婉拒離開。</li><li>自稱便衣警察要檢查錢包或護照，請對方出示證件，並要求去警察局處理，不要當場交出物品。</li><li>被搶或受傷，先到人多的地方，撥 112 或當地警察電話。</li><li>報案取得報案證明，再鎖卡、通知館處，護照被偷參考上方的護照流程。</li></ol></details>
+<details class='card'><summary>租車事故</summary><ol><li>人員有傷就先撥 112。</li><li>在安全的地方停車，開警示燈，拍下現場、車牌和雙方證件。</li><li>通知租車公司，並照租車合約的指示處理。</li><li>需要的話報警取得事故報告，保險理賠常會要。</li></ol></details>
+<details class='card'><summary>重大災害或社會動盪</summary><ol><li>先照當地政府和旅館的指示行動。</li><li>查外交部的旅遊警示與旅外安全資訊，必要時聯絡駐外館處。</li><li>出發前到外交部網站「出國登錄」登錄行程，並下載外交部的「旅外安全指南」APP。</li><li>主動和台灣家人報平安。</li></ol></details>
+<div class='time' style='margin-top:6px'>資料來源：外交部領事事務局（boca.gov.tw）。當地警察、消防和山區救援電話為一般公開資訊，出發前請再確認。</div>
+</section>
+<footer>資料只存在這個瀏覽器裡 ・ 換手機請先用下方備份<br><button class="btn sm" id="exp">備份</button> <button class="btn sm" id="imp">還原</button></footer>
+</main>
+
+<script>window.__TRIP__={"title":"維也納・瑞士之旅","dest":"奧地利 維也納 ・ 瑞士","start":"2027-09-17","end":"2027-09-29","flights":[{"arr":"2027-09-18T04:35","dep":"2027-09-17T23:50","dir":"去程","from":"TPE","id":"mwxin4ycx2mo","no":"EK367","note":"","to":"DXB"},{"arr":"2027-09-18T12:55","dep":"2027-09-18T08:55","dir":"轉機","from":"DBX","id":"mwxiori3tqcy","no":"EK127","note":"","to":"VIE"},{"arr":"2027-09-30T06:10","dep":"2027-09-29T22:00","dir":"回程","from":"ZRH","id":"mwxiqk3du274","no":"EK086","note":"","to":"DXB"},{"arr":"2027-09-30T21:20","dep":"2027-09-30T08:45","dir":"轉機","from":"DXB","id":"mwxiru5ip736","no":"EK386","note":"","to":"TPE"}],"items":{"2027-09-17":[{"cost":"","cur":"EUR","id":"mwom719blfa5","must":false,"note":"","place":"桃園機場","time":"21:30","transport":"飛機"}],"2027-09-18":[{"cost":"","cur":"EUR","id":"mwom7zs3hdme","map":"維也納國際機場","must":false,"note":"入境保守估計2小時","place":"抵達維也納","time":"12:55","transport":"（無）"},{"cost":"11","cur":"EUR","id":"mwom8o068j67","map":"維也納音樂廳 Wiener Konzerthaus","must":false,"note":"每半小時有一班機場巴士","place":"前往住宿","time":"15:30","transport":"巴士"},{"cost":"12.9","cur":"EUR","id":"mwxjs40oj56r","map":"德梅爾咖啡店 Café Demel","must":false,"note":"","place":"Damel 咖啡廳 國王煎餅外帶","time":"16:50","transport":"步行"},{"cost":"","cur":"EUR","id":"mwxji24fuumd","map":"聖彌額爾堂 Pfarre St. Michael","must":false,"note":"走路跟搭車差不多時間","place":"聖米爾大教堂","time":"17:00","transport":"步行"},{"cost":"","cur":"EUR","id":"mwxjlzyqydz0","map":"維也納聖彼得教堂 Peterskirche","must":false,"note":"5分鐘 超近","place":"聖彼得大教堂","time":"17:30","transport":"步行"},{"cost":"30","cur":"EUR","id":"mwxjudt5hh9j","map":"Ribs of Vienna","must":false,"note":"","place":"吃烤肋排","time":"19:00","transport":"步行"},{"cost":"","cur":"EUR","id":"mwxjuy7yrrau","map":"","must":false,"note":"","place":"City walk","time":"","transport":"步行"}],"2027-09-19":[{"cost":"14","cur":"EUR","id":"mwxjz1d6jg2q","map":"自然史博物館 Naturhistorisches Museum Wien","must":false,"note":"走路跟搭車時間差不多","place":"自然史博物館","time":"09:00","transport":"步行"},{"cost":"","cur":"EUR","id":"mwxk3qxqq67w","map":"","must":false,"note":"","place":"午餐","time":"11:00","transport":"（無）"},{"cost":"25","cur":"EUR","id":"mwxk0gra52a0","map":"藝術史博物館 Kunsthistorisches Museum Wien","must":false,"note":"","place":"藝術史博物館","time":"13:00","transport":"步行"},{"cost":"","cur":"EUR","id":"mwxk5t4jeqft","map":"聖斯德望主教座堂 Domkirche St. Stephan","must":false,"note":"有漂亮彩繪玻璃花窗","place":"聖斯蒂芬大教堂","time":"16:00","transport":"步行"}],"2027-09-20":[{"cost":"31.5","cur":"EUR","id":"mwxkoohubmoi","map":"美泉宮 Schloss Schönbrunn","must":false,"note":"","place":"美泉宮","time":"08:20","transport":"地鐵"},{"cost":"","cur":"EUR","id":"mwxkwct815vy","map":"","must":false,"note":"","place":"午餐","time":"11:30","transport":"（無）"},{"cost":"20.5","cur":"EUR","id":"mwxkvx5r41pn","map":"美景宮","must":false,"note":"","place":"上美景宮","time":"14:00","transport":"地鐵"}],"2027-09-21":[{"time":"07:00","place":"出發去西站","map":"Wien Westbahnhof","transport":"地鐵","note":"前一晚要準備好早餐\n走路去U3\n要寄放行李","cost":"","cur":"EUR","must":false,"id":"mwxyow3aw2i4"},{"time":"07:45","place":"西站出發Hallstatt","map":"Hallstatt","transport":"火車","note":"IC火車 只有這班車直達","cost":"22.9","cur":"EUR","must":false,"id":"mwxymeq49hle"},{"time":"17:00","place":"回維也納","map":"","transport":"火車","note":"IC","cost":"22.9","cur":"EUR","must":false,"id":"mwxz2315q5ev"},{"time":"20:40","place":"去中央車站","map":"Wein Hbf","transport":"電車","note":"18號輕軌 \n最晚20:51的班次要上車比較保險","cost":"","cur":"EUR","must":false,"id":"mwxz801enbh0"},{"cost":"98.3","cur":"EUR","id":"mwomcjossm4g","must":false,"note":"","place":"搭過夜火車","time":"21:39","transport":"火車","map":""}],"2027-09-22":[{"cost":"","cur":"EUR","id":"mwomdalw1g3t","must":false,"note":"","place":"抵達瑞士","time":"08:20","transport":"（無）"},{"cost":"","cur":"EUR","id":"mwongq5aheic","must":false,"note":"","place":"蘇黎世city walk","time":"","transport":"（無）"},{"cost":"","cur":"EUR","id":"mwonh29gf9y2","must":false,"note":"","place":"蘇黎世美術館","time":"","transport":"（無）"},{"cost":"","cur":"EUR","id":"mwonhcpxzibe","map":"","must":false,"note":"可以20:32再往Visp 因為可以在蘇黎世買東西吃 可以看看tgtg","place":"前往Visp","time":"20:32","transport":"（無）"}],"2027-09-23":[{"cost":"","cur":"EUR","id":"mwonniwlmslh","must":false,"note":"","place":"搭車去Zermatt","time":"05:30","transport":"火車"},{"cost":"","cur":"EUR","id":"mwonnzmzgq3i","must":false,"note":"","place":"抵達Zermatt","time":"06:40","transport":"（無）"},{"cost":"","cur":"EUR","id":"mwonsuca6w6n","map":"","must":false,"note":"","place":"到馬特洪峰觀景點","time":"07:00","transport":"步行"},{"cost":"27","cur":"CHF","id":"mwoog9i72299","must":false,"note":"下山最晚的車是16:40 抓最晚16:00要下山\n所以可以買完午餐抓11.上山","place":"上五湖步道","time":"11:00","transport":"纜車"},{"cost":"","cur":"EUR","id":"mwos79shch85","must":false,"note":"約18:40開始是黃金時刻","place":"抵達馬特洪峰觀景點","time":"18:20","transport":"步行"},{"cost":"","cur":"EUR","id":"mwosa4j0wo4u","must":false,"note":"","place":"R42火車回Visp","time":"21:06","transport":"火車"}],"2027-09-24":[{"cost":"","cur":"EUR","id":"mwosrce34a9a","must":false,"note":"","place":"從Visp前往格林德瓦","time":"07:20","transport":"火車"},{"cost":"","cur":"EUR","id":"mwosrys8zi4b","must":false,"note":"","place":"抵達格林德瓦 前往售票口","time":"09:20","transport":"火車"},{"cost":"71","cur":"CHF","id":"mwps788gcaus","must":false,"note":"來回纜車加兩個項目的票錢","place":"在first山上玩","time":"10:00","transport":"（無）"},{"cost":"","cur":"EUR","id":"mwptgjxdgad0","must":false,"note":"","place":"下山","time":"14:00","transport":"纜車"},{"cost":"","cur":"EUR","id":"mwpthoah8sb4","must":false,"note":"","place":"前往Pfingstegg纜車口","time":"14:30","transport":"步行"},{"cost":"46.4","cur":"CHF","id":"mwptk00jpq5v","must":false,"note":"上山纜車 每20分鐘一班\n單人來回纜車加滑梯兩次\n下山纜車最晚18:00","place":"上去玩滑梯","time":"15:00","transport":"纜車"},{"cost":"","cur":"EUR","id":"mwptltu8wt6g","must":false,"note":"","place":"下山回到格林德瓦","time":"17:00","transport":"纜車"},{"cost":"","cur":"EUR","id":"mwptq70hlwko","must":false,"note":"","place":"在格林德瓦的超市買點晚餐車上吃","time":"17:00","transport":"（無）"},{"cost":"","cur":"EUR","id":"mwptwnar4oez","must":false,"note":"火車➡️公車➡️火車","place":"顛簸轉車回Visp","time":"18:47","transport":"火車"}],"2027-09-25":[{"cost":"","cur":"EUR","id":"mwpvufozngm2","must":false,"note":"","place":"前往Brienz","time":"07:54","transport":"火車"},{"cost":"","cur":"EUR","id":"mwswzfyufhat","map":"","must":false,"note":"","place":"抵達Brienz","time":"10:00","transport":"（無）"},{"cost":"50","cur":"CHF","id":"mwsxso5w2tn5","map":"","must":false,"note":"","place":"搭蒸汽小火車","time":"10:30","transport":"火車"},{"cost":"","cur":"EUR","id":"mwsxvhwk2aan","map":"","must":false,"note":"Brienz湖邊漂漂","place":"下山","time":"13:28","transport":"火車"},{"cost":"","cur":"EUR","id":"mwsxpasvx24m","map":"","must":false,"note":"","place":"去Interlaken","time":"15:30","transport":"船"},{"cost":"","cur":"EUR","id":"mwsxiq0yiu18","map":"","must":false,"note":"公車轉火車","place":"從Interlaken回Visp","time":"18:34","transport":"火車"}],"2027-09-26":[{"cost":"","cur":"EUR","id":"mwpukppugril","must":false,"note":"","place":"前往格呂耶爾","time":"07:54","transport":"火車"},{"cost":"40","cur":"CHF","id":"mwpulsg0xbuu","must":false,"note":"","place":"吃午餐起司鍋","time":"11:30","transport":"（無）"},{"cost":"","cur":"EUR","id":"mwpvacjh5a6e","must":false,"note":"","place":"異形博物館","time":"13:00","transport":"步行"},{"cost":"","cur":"EUR","id":"mwpvodom6avw","must":false,"note":"可以去伯爾尼走走 或直接回Visp 但都會經過伯爾尼","place":"搭車去伯爾尼","time":"15:10","transport":"火車"}],"2027-09-27":[{"cost":"","cur":"EUR","id":"mwx5m0eymrkj","map":"","must":false,"note":"要搭1小時20分鐘","place":"去Sass-fee","time":"08:30","transport":"巴士"},{"cost":"","cur":"EUR","id":"mwx5mqr8lvho","map":"","must":false,"note":"","place":"在sass fee 餵土撥鼠","time":"10:10","transport":"（無）"},{"cost":"","cur":"EUR","id":"mwx5q8mxi6kh","map":"","must":false,"note":"Spiez 或Brig 都距離Visp半小時","place":"可以去Visp附近的小鎮逛逛","time":"14:00","transport":"火車"}],"2027-09-28":[{"cost":"","cur":"EUR","id":"mwt2qoi5n7lm","map":"","must":false,"note":"IR95 每小時09分一班\nIR90 每小時31分一班","place":"去Montreux","time":"07:00","transport":"火車"},{"cost":"","cur":"EUR","id":"mwt49uar7388","map":"","must":false,"note":"約一小時","place":"皇后樂團博物館","time":"09:00","transport":"（無）"},{"cost":"","cur":"EUR","id":"mwt3yhxjb2po","map":"Quais de Montreux","must":false,"note":"","place":"湖畔長廊看風景拍照","time":"10:00","transport":"步行"},{"cost":"","cur":"EUR","id":"mwtc6ilmreb6","map":"","must":false,"note":"RE33","place":"前往Lausanne","time":"11:38","transport":"火車"},{"cost":"25","cur":"CHF","id":"mwtcmel8xcj6","map":"","must":false,"note":"聽說不錯吃的網紅店 抹茶也蠻有名的","place":"龍蝦三明治","time":"12:00","transport":"步行"},{"cost":"","cur":"EUR","id":"mwtinqd8mjgq","map":"","must":false,"note":"IC1","place":"去Geneva","time":"14:46","transport":"火車"},{"cost":"","cur":"EUR","id":"mwtiqsygppqu","map":"","must":false,"note":"週一沒有開","place":"去百達翡麗博物館","time":"15:30","transport":"巴士"},{"cost":"","cur":"EUR","id":"mwtjju9glbt0","map":"","must":false,"note":"Lausanne 也很多餐廳 可能吃下來跟超市差不多錢","place":"受不了可以去Lausanne吃中餐","time":"18:00","transport":"火車"},{"cost":"","cur":"EUR","id":"mwtjlew88dwa","map":"","must":false,"note":"","place":"回Visp","time":"21:00","transport":"火車"}],"2027-09-29":[{"time":"09:54","place":"去蘇黎世","map":"Zürich HB","transport":"火車","note":"IC8直達\n寄放行李","cost":"","cur":"EUR","must":false,"id":"mwxzhfe4evg6"},{"time":"","place":"吃午餐","map":"","transport":"（無）","note":"","cost":"","cur":"EUR","must":false,"id":"mwxzl36vyzjd"},{"time":"14:20","place":"去瑞士蓮巧克力工廠","map":"Lindt Home of Chocolate","transport":"火車","note":"S24","cost":"10","cur":"CHF","must":false,"id":"mwxznqtk4nmv"},{"time":"17:00","place":"回市區","map":"","transport":"火車","note":"S8 17.10 17.40","cost":"","cur":"EUR","must":false,"id":"mwxzp23w48lc"},{"time":"19:10","place":"去機場","map":"","transport":"火車","note":"","cost":"","cur":"EUR","must":false,"id":"mwxzvial190g"}]},"lodging":[{"name":"瑞士住宿","addr":"Mondstrasse 14a, 3930 Visp, 瑞士","in":"2027-09-22","out":"2027-09-29","note":"","id":"mwxzynqtjp50"},{"name":"維也納住宿","addr":"大概在維也納音樂廳","in":"2027-09-18","out":"2027-09-21","note":"","id":"mwy03vwxg9nt"}],"budget":[{"amt":"12116","cur":"TWD","id":"mwx5f6vvy9d3","name":"瑞士住宿","note":"","paid":false},{"amt":"5148","cur":"TWD","id":"mwx5ge94ac61","name":"維也納住宿","note":"","paid":false},{"name":"機票","amt":"34000","cur":"TWD","paid":false,"note":"","id":"mwxycdoz2kmz"},{"name":"Swiss Travel Pass","amt":"13000","cur":"TWD","paid":false,"note":"","id":"mwxydfjljuqv"},{"name":"瑞士總飲食初估","amt":"10000","cur":"TWD","paid":false,"note":"","id":"mwxyeeojhmj8"}],"rate":{"CHF":"40","EUR":"37"},"todos":[],"pre":[],"pack":[],"pay":{"name":"Bill Bear","note":"","url":"https://billbear.app/i/Llydsc0kaJHf2mrp6VsD?code=bEyBqWrV"}};</script>
+<script>
+(function(){
+var K='trip-planner-v1',S=null,cur=0,popTab=false;
+try{S=JSON.parse(localStorage.getItem(K))}catch(e){}
+S=S||{title:'維也納・瑞士之旅',dest:'奧地利 維也納 ・ 瑞士',start:'',end:'',flights:[],items:{},todos:[],lodging:[],pre:[],pack:[]};
+S.budget=S.budget||[];S.rate=S.rate||{EUR:'',CHF:''};
+var RO=!!window.__TRIP__,DB=null,MID={},CH={},pt=null;
+if(window.__TRIP__){S=Object.assign({title:'',dest:'',start:'',end:'',flights:[],items:{},todos:[],lodging:[],pre:[],pack:[],budget:[],rate:{EUR:'',CHF:''}},window.__TRIP__);document.body.classList.add('ro');$('modeNote').textContent='旅伴版：行程為唯讀，待辦、出發前、行李清單可以自己新增與勾選'}
+try{CH=JSON.parse(localStorage.getItem(K+'-chk'))||{}}catch(e){}
+function save(){if(!RO)S.ts=Date.now();try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}if($('budSum'))budgetSum();if(DB&&!RO)pushTrip()}
+function pushTrip(){clearTimeout(pt);pt=setTimeout(function(){S.ts=S.ts||Date.now();var o={};['title','dest','start','end','flights','items','lodging','budget','rate','todos','pre','pack','pay','ts'].forEach(function(k){o[k]=S[k]});DB.doc('trip/main').set(JSON.parse(JSON.stringify(o))).catch(function(){})},600)}
+function $(id){return document.getElementById(id)}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+var CUR=['EUR','CHF','TWD'];
+var SYM={EUR:'€',CHF:'CHF ',TWD:'NT$'};
+var TR=['步行','電車','地鐵','火車','登山鐵路','纜車','巴士','船','計程車','飛機','自駕','其他'];
+var COL=['#C9A39A','#C8AD7F','#9DAFB5','#A5B09A'];
+var WD=['日','一','二','三','四','五','六'];
+function fmt(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)}
+function days(){
+ if(!S.start)return[];
+ var a=new Date(S.start+'T00:00'),b=new Date((S.end||S.start)+'T00:00'),o=[];
+ if(isNaN(a)||isNaN(b))return[];
+ for(var d=new Date(a);d<=b&&o.length<60;d.setDate(d.getDate()+1))o.push(fmt(d));
+ return o;
+}
+
+/* generic form sheet */
+function form(title,fields,vals,ok,del){
+ var ov=document.createElement('div');ov.className='ov';
+ var h='<div class="sheet"><h3>'+esc(title)+'</h3>';
+ fields.forEach(function(f){
+  var v=vals[f.k]==null?'':vals[f.k];
+  if(f.t==='check'){h+='<div class="ck"><input type="checkbox" data-k="'+f.k+'"'+(vals[f.k]?' checked':'')+'><span>'+esc(f.l)+'</span></div>';return}
+  h+='<label>'+esc(f.l)+'</label>';
+  if(f.t==='select'){h+='<select data-k="'+f.k+'">'+f.o.map(function(o){return'<option'+(o===v?' selected':'')+'>'+esc(o)+'</option>'}).join('')+'</select>'}
+  else if(f.t==='area'){h+='<textarea rows="3" data-k="'+f.k+'">'+esc(v)+'</textarea>'}
+  else{h+='<input type="'+(f.t||'text')+'" data-k="'+f.k+'" value="'+esc(v)+'" placeholder="'+esc(f.p||'')+'">'}
+ });
+ h+='<div class="bar">'+(del?'<button class="btn coral" data-a="del">刪除</button>':'')+'<button class="btn" data-a="cancel" style="background:var(--paper)">取消</button><button class="btn leaf" data-a="ok">儲存</button></div></div>';
+ ov.innerHTML=h;document.body.appendChild(ov);
+ function close(){ov.remove()}
+ ov.addEventListener('click',function(e){
+  if(e.target===ov)return close();
+  var a=e.target.getAttribute&&e.target.getAttribute('data-a');
+  if(a==='cancel')close();
+  if(a==='del'){if(confirm('確定要刪除嗎？')){del();close()}}
+  if(a==='ok'){var o={};ov.querySelectorAll('[data-k]').forEach(function(el){o[el.getAttribute('data-k')]=el.type==='checkbox'?el.checked:el.value.trim()});ok(o);close()}
+ });
+}
+
+/* hero */
+function hero(){
+ $('hTitle').textContent=S.title||'我的旅行';
+ var sub=[S.dest,S.start?S.start.replace(/-/g,'/')+(S.end?' – '+S.end.replace(/-/g,'/'):''):''].filter(Boolean).join('　');
+ $('hSub').textContent=sub||'點下方按鈕，填入目的地與日期吧';
+ var c='';
+ if(S.start){
+  var t=new Date();t.setHours(0,0,0,0);
+  var a=new Date(S.start+'T00:00'),b=new Date((S.end||S.start)+'T00:00'),n=Math.round((a-t)/864e5);
+  c=n>0?'<div class="count">出發倒數 <b>'+n+'</b> 天</div>':(t<=b?'<div class="count">旅行中</div>':'<div class="count">旅程已結束</div>');
+ }
+ $('hCount').innerHTML=c;
+}
+$('editTrip').onclick=function(){
+ form('旅程資料',[{k:'title',l:'旅程名稱',p:'例：維也納＋瑞士 12 日'},{k:'dest',l:'目的地',p:'例：奧地利維也納、瑞士策馬特'},{k:'start',l:'出發日',t:'date'},{k:'end',l:'回程日',t:'date'}],S,function(o){
+  S.title=o.title;S.dest=o.dest;S.start=o.start;S.end=o.end;cur=0;save();render();
+ });
+};
+
+/* flights */
+var FF=[{k:'dir',l:'類型',t:'select',o:['去程','回程','轉機']},{k:'no',l:'航班編號',p:'例：OS88'},{k:'from',l:'出發機場',p:'例：TPE'},{k:'to',l:'抵達機場',p:'例：VIE'},{k:'dep',l:'出發時間',t:'datetime-local'},{k:'arr',l:'抵達時間',t:'datetime-local'},{k:'note',l:'備註',t:'area',p:'航廈、行李額度、訂位代號…'}];
+function dt(s){return s?s.replace('T',' ').replace(/-/g,'/'):'—'}
+function flights(){
+ var el=$('flightList');
+ if(!S.flights.length){el.innerHTML='<div class="empty">還沒有航班，點右上角新增</div>';return}
+ el.innerHTML=S.flights.map(function(f){return'<div class="card flight"><div class="row"><span class="pill" style="background:'+(f.dir==='回程'?'var(--sky)':'var(--sun)')+'">'+esc(f.dir)+'</span><span>'+esc(f.no)+'</span></div>'+
+ '<div class="row"><span class="ap">'+esc(f.from||'—')+'</span><span class="time">→</span><span class="ap">'+esc(f.to||'—')+'</span></div>'+
+ '<div class="row"><span class="time">'+dt(f.dep)+'</span><span class="time">'+dt(f.arr)+'</span></div>'+
+ (f.note?'<div class="time">'+esc(f.note)+'</div>':'')+
+ '<div class="acts"><button class="btn sm" data-ef="'+f.id+'">編輯</button></div></div>'}).join('');
+}
+$('addFlight').onclick=function(){form('新增航班',FF,{dir:'去程'},function(o){o.id=uid();S.flights.push(o);save();flights()})};
+$('flightList').onclick=function(e){
+ var id=e.target.getAttribute('data-ef');if(!id)return;
+ var f=S.flights.filter(function(x){return x.id===id})[0];
+ form('編輯航班',FF,f,function(o){Object.assign(f,o);save();flights()},function(){S.flights=S.flights.filter(function(x){return x.id!==id});save();flights()});
+};
+
+/* money helpers */
+function dirUrl(a,b){return 'https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(a||'')+'&destination='+encodeURIComponent(b||'')+'&travelmode=transit'}
+function mapUrl(q){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q||'')}
+function money(n,c){n=parseFloat(n)||0;return (SYM[c||'EUR']||'')+n.toLocaleString('zh-TW',{maximumFractionDigits:2})}
+function sumCur(arr){var o={};arr.forEach(function(x){var n=parseFloat(x.amt!=null?x.amt:x.cost);if(n>0){var c=x.cur||'EUR';o[c]=(o[c]||0)+n}});return o}
+function fmtSum(o){var a=CUR.filter(function(c){return o[c]}).map(function(c){return money(o[c],c)});return a.length?a.join('、'):'—'}
+function daySum(list){var o=sumCur(list);return Object.keys(o).length?`<div class='time' style='margin:0 0 10px'>本日預計花費：${fmtSum(o)}</div>`:''}
+function toTwd(o){var t=o.TWD||0;['EUR','CHF'].forEach(function(c){if(o[c]){var r=parseFloat(S.rate[c]);t=(t===null||!(r>0))?null:t+o[c]*r}});return t}
+/* itinerary */
+var IF=[{k:'time',l:'時間',t:'time'},{k:'place',l:'地點／行程',p:'例：美泉宮、少女峰'},{k:'map',l:'Google 地圖搜尋字（選填）',p:'留空就用上面的地點名稱，同名地點多時可填地址'},{k:'transport',l:'交通方式',t:'select',o:['（無）'].concat(TR)},{k:'note',l:'備註',t:'area',p:'門票、預約、小提醒…'},{k:'cost',l:'預計花費（選填）',t:'number',p:'例：25'},{k:'cur',l:'幣別',t:'select',o:CUR},{k:'must',l:'這是必去行程',t:'check'}];
+function itin(){
+ var ds=days(),tabs=$('tabs'),tl=$('timeline');
+ if(!ds.length){tabs.innerHTML='';tl.innerHTML='<div class="empty">先在最上方「編輯旅程資料」設定出發日與回程日，就會出現每天的分頁</div>';return}
+ if(cur>=ds.length)cur=0;
+ tabs.innerHTML=ds.map(function(d,i){var dd=new Date(d+'T00:00');return'<button class="tab'+(i===cur?' on'+(popTab?' pop':''):'')+'" data-d="'+i+'">Day '+(i+1)+'<small>'+(dd.getMonth()+1)+'/'+dd.getDate()+'（'+WD[dd.getDay()]+'）</small></button>'}).join('');
+ var list=(S.items[ds[cur]]||[]).slice();
+ if(!list.length){tl.innerHTML='<div class="empty">這天還沒有行程，點右上角「＋ 新增」</div>';return}
+ tl.innerHTML=daySum(list)+(list.length>1?'<div class="acts" style="margin:-4px 0 8px"><button class="btn sm" data-sort="1">依時間排序</button></div>':'')+list.map(function(it,i){
+  var tg=it.transport&&it.transport!=='（無）'?'<span class="tag" style="background:'+COL[TR.indexOf(it.transport)%4]+'">'+esc(it.transport)+'</span>':'';
+  return'<div class="card item'+(it.must?' must':'')+(popTab?' pop-in':'')+'"><div class="time">'+esc(it.time||'時間未定')+'</div><div class="place">'+esc(it.place)+'</div>'+
+  '<div class="tags">'+tg+(it.must?'<span class="pill must">必去</span>':'')+(parseFloat(it.cost)>0?`<span class='pill' style='background:var(--card)'>${money(it.cost,it.cur)}</span>`:'')+'</div>'+(it.note?'<div class="time">'+esc(it.note)+'</div>':'')+
+  '<div class="acts"><a class="btn sm" style="text-decoration:none'+(list[i+1]?'':';margin-right:auto')+'" href="'+esc(mapUrl(it.map||it.place))+'" target="_blank" rel="noopener noreferrer">地圖</a>'+(list[i+1]?'<a class="btn sm" style="text-decoration:none;margin-right:auto" href="'+esc(dirUrl(it.map||it.place,list[i+1].map||list[i+1].place))+'" target="_blank" rel="noopener noreferrer">到下一站</a>':'')+''+'<button class="btn sm" data-mv="'+it.id+':-1" aria-label="上移">↑</button><button class="btn sm" data-mv="'+it.id+':1" aria-label="下移">↓</button><button class="btn sm" data-ei="'+it.id+'">編輯</button></div></div>'}).join('');
+}
+$('tabs').onclick=function(e){
+ var b=e.target.closest('[data-d]');if(!b)return;
+ cur=+b.getAttribute('data-d');popTab=true;itin();popTab=false;
+};
+function dayLabels(){return days().map(function(d,i){var dd=new Date(d+'T00:00');return 'Day '+(i+1)+'（'+(dd.getMonth()+1)+'/'+dd.getDate()+'）'})}
+function dayField(){return{k:'day',l:'所在日期',t:'select',o:dayLabels()}}
+function insTime(arr,it){var t=it.time;if(!t){arr.push(it);return}var i=arr.length;for(var j=0;j<arr.length;j++){if(arr[j].time&&arr[j].time>t){i=j;break}}arr.splice(i,0,it)}
+function byTime(a,b){var x=a.time||'99:99',y=b.time||'99:99';return x<y?-1:(x>y?1:0)}
+$('addItem').onclick=function(){
+ var ds=days();if(!ds.length){alert('請先設定出發日與回程日');return}
+ var DL=dayLabels();
+ form('新增行程',[dayField()].concat(IF),{transport:'（無）',day:DL[cur]},function(o){var idx=Math.max(0,DL.indexOf(o.day));delete o.day;o.id=uid();insTime(S.items[ds[idx]]=S.items[ds[idx]]||[],o);cur=idx;save();itin()});
+};
+$('timeline').onclick=function(e){
+ var t=e.target,ds=days(),k=ds[cur],arr=S.items[k]||[];
+ if(t.getAttribute('data-sort')){arr.sort(byTime);save();itin();return}
+ var mv=t.getAttribute('data-mv');
+ if(mv){var p=mv.split(':'),i=arr.findIndex(function(x){return x.id===p[0]}),j=i+(+p[1]);if(i<0||j<0||j>=arr.length)return;var tmp=arr[i];arr[i]=arr[j];arr[j]=tmp;save();itin();return}
+ var id=t.getAttribute('data-ei');if(!id)return;
+ var it=arr.filter(function(x){return x.id===id})[0],DL=dayLabels();
+ form('編輯行程',[dayField()].concat(IF),Object.assign({},it,{day:DL[cur]}),function(o){
+  var idx=Math.max(0,DL.indexOf(o.day));delete o.day;Object.assign(it,o);
+  if(idx!==cur){S.items[k]=arr.filter(function(x){return x.id!==id});insTime(S.items[ds[idx]]=S.items[ds[idx]]||[],it);cur=idx}
+  save();itin();
+ },function(){S.items[k]=arr.filter(function(x){return x.id!==id});save();itin()});
+};
+/* lodging */
+var LF=[{k:'name',l:'住宿名稱'},{k:'addr',l:'地址'},{k:'in',l:'入住日',t:'date'},{k:'out',l:'退房日',t:'date'},{k:'note',l:'備註',t:'area',p:'訂房編號、入住時間、聯絡電話…'}];
+function stay(){
+ var el=$('stayList');
+ if(!S.lodging.length){el.innerHTML='<div class="empty">還沒有住宿資料</div>';return}
+ el.innerHTML=S.lodging.map(function(l){return'<div class="card"><div class="place">'+esc(l.name)+'</div>'+
+ (l.addr?'<div class="time">'+esc(l.addr)+'</div>':'')+
+ '<div class="tags"><span class="pill" style="background:var(--leaf)">入住 '+esc((l.in||'—').slice(5).replace('-','/'))+'</span><span class="pill" style="background:var(--sky)">退房 '+esc((l.out||'—').slice(5).replace('-','/'))+'</span></div>'+
+ (l.note?'<div class="time">'+esc(l.note)+'</div>':'')+
+ '<div class="acts"><a class="btn sm" style="text-decoration:none;margin-right:auto" href="'+esc(mapUrl(l.addr||l.name))+'" target="_blank" rel="noopener noreferrer">地圖</a><button class="btn sm" data-es="'+l.id+'">編輯</button></div></div>'}).join('');
+}
+$('addStay').onclick=function(){form('新增住宿',LF,{in:S.start,out:S.end},function(o){o.id=uid();S.lodging.push(o);save();stay()})};
+$('stayList').onclick=function(e){
+ var id=e.target.getAttribute('data-es');if(!id)return;
+ var l=S.lodging.filter(function(x){return x.id===id})[0];
+ form('編輯住宿',LF,l,function(o){Object.assign(l,o);save();stay()},function(){S.lodging=S.lodging.filter(function(x){return x.id!==id});save();stay()});
+};
+
+/* checklists */
+
+var SUGX={
+todos:[
+['預約與訂票',['預約美泉宮、美景宮等熱門景點的時段票','預約景觀列車座位（冰河快車、伯連納快車需訂位）','規劃瑞士交通（比較瑞士通行證與點對點票哪個划算）','買維也納交通票（2026 年起只剩 24 小時票與 7 日票，依天數比較）','預訂薩赫蛋糕或百年咖啡館、熱門餐廳','確認少女峰、馬特洪峰等纜車營運與天氣','查各景點是否需要線上預約，或有網路優惠價','訂歌劇院或音樂會門票|opera','查國家歌劇院站票或當日票的購買方式|opera','預約博物館、美術館的時段票與導覽|museum','查博物館通票或城市卡是否划算|museum','預訂想吃的餐廳（週末與旺季需提早）|food','查市集與傳統小店的營業日|food','查購物商圈與折扣季時間|shop','查日出日落時間與熱門拍攝點|photo','預訂長途火車座位與轉乘時間|train','比較早鳥票與彈性票的價差|train','預訂租車並確認取還車地點與保險|car','確認奧地利與瑞士的高速公路通行貼紙|car','預約滑雪課程、雪票與裝備租借|ski','預約雪鞋健行等冬季行程|winter','查聖誕市集的開放日期與地點|winter','確認登山步道開放狀況與山屋是否需預約|hike','查湖上遊船班次與夏季戶外活動|summer','確認兒童票、家庭票與親子友善景點|kids','確認長輩行程的步行距離與電梯、座位等設施|elder','比較各項交通票與通票的總花費|budget','找免費或低價的景點與活動|budget','先搞懂歐洲餐廳的小費與座位費習慣|first','練習幾句常用德語（你好、謝謝、請問）|first']],
+['行程規劃',['每天準備一個雨天備案','保留一天彈性日（山區纜車常因天氣停駛）','週日商店多半休息，先備好補給','確認各博物館的休館日（有些週一休館）','搭維也納市區交通前先買票或確認電子票有效','規劃機場往返市區的交通','查車站或飯店的行李寄放服務','了解購物退稅的條件與流程','每天預留午餐與休息時間','列出每天的起點與終點，避免來回奔波','查日出日落時間，安排戶外行程','租車冬季確認雪鍊或冬季輪胎|winter,car','山區行程預留早出發與下山時間|hike','查登山路線難度、距離與所需時間|hike','為孩子預留午休與玩耍時間|kids','為長輩安排較少步行與較多休息的天數|elder']],
+['通訊與備份',['買網卡或 eSIM（確認有涵蓋瑞士）','把訂位與票券截圖存到手機離線可看','把行程與訂房資料備份一份給家人','在地圖 App 標記所有住宿與景點','下載旅遊會用到的 App（交通、翻譯、天氣）','和旅伴約好共用行程與記帳的方式']]
+],
+pre:[
+['證件與保險',['確認護照效期（申根區需離境後仍有效，建議 6 個月以上）','護照拍照存雲端與手機','買旅平險，確認含醫療與行李延誤','確認旅平險包含登山與山區救援','拍照存保險單與保險緊急專線','到外交部網站「出國登錄」登錄行程與聯絡方式','下載外交部「旅外安全指南」APP','把外交部緊急聯絡中心與駐奧地利、駐瑞士館處電話存進手機','查 EES 入境新制，第一次入境多留排隊時間','到歐盟官方網站確認 ETIAS 是否已開始實施','查入境可攜帶的現金與物品申報規定','準備國際駕照與本國駕照|car','確認孩子的護照效期與必要文件|kids','確認旅平險是否涵蓋滑雪等運動|ski','確認相機與貴重物品是否有保險|photo']],
+['錢與通訊',['換歐元與瑞士法郎（兩國貨幣不同）','信用卡開通海外刷卡並確認預借現金密碼','確認信用卡海外手續費與回饋','手機錢包綁好信用卡（感應付款方便）','準備一張備用卡，放在不同的包包','設定信用卡刷卡通知與額度','確認網卡或 eSIM 有涵蓋瑞士（瑞士不是歐盟）','下載離線地圖與 SBB、ÖBB 交通 App','下載翻譯 App 與離線語言包','確認手機國際漫遊方案','把 112 與護照所屬國駐外館處聯絡方式存進手機','查常見付款習慣（部分小店只收現金）|first']],
+['出發前最後確認',['機票與住宿憑證存在手機','列印或截圖重要訂位憑證','出發前 24 小時辦理線上報到','確認行李額度與液體限制','若有轉機，確認轉機時間與是否需換航廈','告知家人行程與住宿','出發前一週與前一天查山區天氣與營運狀況','備好個人常用藥與處方（含英文藥名）','安排家裡的寵物、植物與信件','查機場到住宿的交通方式與末班車時間','確認抵達當天的入住時間與寄放行李方式','確認住宿是否含早餐、有無電梯與暖氣','預先調整作息，緩解時差','確認冬季營運的纜車、道路與雪況|winter','確認租車預訂與保險證明|car','確認火車時刻與轉乘時間|train','把相機電池充滿、記憶卡清空|photo','再看一次博物館與景點的開放時間|museum','備妥長輩的常用藥、病歷摘要與緊急聯絡卡|elder','準備孩子的零食、娛樂與機上用品|kids']]
+],
+pack:[
+['證件與文件',['護照（出發前再確認效期）','護照影本與證件照（和正本分開放）','機票與訂位憑證（離線截圖）','住宿訂房確認與地址（離線截圖）','保險單與保險緊急專線','緊急聯絡卡（駐外館處、家人、住宿地址）','瑞士通行證或各段車票（電子票存手機）','紙本行程與住宿地址（手機沒電時備用）','國際駕照與本國駕照|car','退稅文件用的透明夾|shop']],
+['錢與支付',['信用卡（至少兩張，分開放）','少量歐元現金','少量瑞士法郎現金','零錢包（公廁、置物櫃常需硬幣）','貼身腰包或暗袋（放現金與備用卡）']],
+['電子用品',['手機與充電線','多孔 USB 充電器','行動電源（需隨身帶上機）','轉接頭（奧地利 F 型）','轉接頭（瑞士 J 型）','耳機','平板或電子書','手機防水袋或防水殼（雨天、湖邊）']],
+['上衣與褲裙',['貼身排汗衣或發熱衣（依天數）','長袖上衣（可疊穿，依天數）','短袖上衣（依天數）','襯衫或針織衫（較正式的餐廳用）','耐走的快乾長褲','牛仔褲或休閒褲','裙子或洋裝（選帶）','睡衣','內衣褲（依天數，另加兩套備用）']],
+['外套與保暖',['輕量防風防水外套','刷毛或薄羽絨中層外套','圍巾','薄手套','保暖或遮陽的帽子']],
+['鞋襪',['已經穿過、好走的休閒鞋','防滑底的鞋（濕滑石板路、山路）','襪子（依天數，另加兩雙）','室內拖鞋','好穿脫的鞋（過安檢方便）']],
+['盥洗用品',['牙刷與牙膏','洗面乳','洗髮與沐浴旅行組（或確認住宿提供）','旅行用快乾毛巾','梳子','刮鬍刀','棉花棒','指甲剪','隱形眼鏡與護理液','備用眼鏡','生理用品（依需要）']],
+['保養與防護',['防曬乳','太陽眼鏡（高山紫外線強）','護唇膏','保濕乳液（高山乾燥）','護手霜','乾洗手','濕紙巾','口罩']],
+['藥品與急救',['止痛退燒藥','感冒藥','腸胃藥與止瀉藥','過敏藥','暈車藥（山路與登山火車）','眼藥水','OK 繃與水泡貼','優碘或酒精棉片','個人處方藥（附英文藥名與處方）']],
+['隨身小物',['保溫瓶（瑞士自來水可飲用）','輕便日用背包（搭登山火車、纜車）','拉鍊包或貼身包（防扒手）','環保購物袋','輕便折傘','原子筆（填表用）','零食與能量棒','小包衛生紙','夾鏈袋與塑膠袋']],
+['長途飛行隨身',['頸枕、眼罩與耳塞','機艙保暖薄外套','空水瓶（過安檢後裝水）','貴重物品與藥品（放隨身行李）','一套替換衣物（行李延誤備用）']],
+['行李收納',['行李秤','行李鎖','壓縮收納袋','髒衣袋','旅行用洗衣精與曬衣繩','行李吊牌']],
+['其他專屬',['發熱衣與保暖內搭褲（依天數）|winter','羊毛厚襪|winter','保暖帽與防風手套|winter','防水保暖雪靴或防水鞋|winter','防滑冰爪（雪地步道）|winter','暖暖包|winter','泳衣與快乾毛巾（湖邊或溫泉）|summer','遮陽帽與薄長袖防曬衣|summer','防蚊液|summer','涼鞋或透氣鞋|summer','防水登山鞋|hike','登山襪（依天數）|hike','登山杖|hike','輕便登山背包（20–30 公升）|hike','水袋或大水壺|hike','頭燈或手電筒（山屋或夜間行走）|hike','小型急救包|hike','輕便雨衣（可套在背包外）|hike','護膝|hike','行動糧與電解質|hike','滑雪外套與雪褲|ski','滑雪手套與雪襪|ski','護目鏡與頸套|ski','安全帽（也可現場租借）|ski','一套正式服裝（西裝外套或洋裝，看歌劇用）|opera','正式的鞋|opera','小包（劇院用，不要帶大背包）|opera','輕便小背包（博物館常要求寄放大背包）|museum','學生證或優惠證件|museum','相機與備用電池、記憶卡|photo','腳架與鏡頭清潔布|photo','相機防雨套|photo','行動硬碟或雲端備份空間|photo','摺疊餐具與保鮮袋（市集買的食物）|food','保冷袋|food','折疊袋（裝伴手禮）|shop','氣泡紙或包裝袋（保護易碎品）|shop','輕便行李箱（月台與樓梯多）|train','車上用的水與小零食|train','手機車架與車用充電線|car','停車與過路用的零錢|car','雪鏈|winter,car','兒童安全座椅|kids,car','兒童零食|kids','玩具與繪本|kids','孩子的替換衣物（多帶幾套）|kids','兒童常備藥與體溫計|kids','背巾或輕便推車|kids','嬰兒濕紙巾與尿布（依年齡）|kids','長輩的慢性病藥與備用量|elder','老花眼鏡|elder','輕便手杖|elder','長輩用的護膝|elder','輕便折疊椅或坐墊|elder','保溫瓶與自備環保杯|budget','自備餐盒|budget','個人防盜貼身包|first','常用英文與德文的求助小卡|first']]
+]};
+var TAGS=[['winter','冬季'],['summer','夏季'],['hike','登山健行'],['ski','滑雪'],['opera','歌劇／音樂會'],['museum','博物館／美術館'],['food','美食'],['shop','購物'],['photo','攝影'],['train','長途火車'],['car','租車自駕'],['kids','帶小孩'],['elder','帶長輩'],['first','第一次去歐洲'],['budget','省錢']];
+var SL={todos:'待辦',pre:'出發前',pack:'行李'};
+var TG2={winter:'依季節',summer:'依季節',hike:'戶外：登山與滑雪',ski:'戶外：登山與滑雪',opera:'藝文與攝影',museum:'藝文與攝影',photo:'藝文與攝影',food:'吃喝購物與省錢',shop:'吃喝購物與省錢',budget:'吃喝購物與省錢',train:'交通：火車與租車',car:'交通：火車與租車',kids:'同行者：孩子與長輩',elder:'同行者：孩子與長輩',first:'第一次去歐洲'};
+var TG2O=['依季節','戶外：登山與滑雪','藝文與攝影','吃喝購物與省錢','交通：火車與租車','同行者：孩子與長輩','第一次去歐洲'];
+function sugGroups(k){
+ var have=listOf(k).map(function(x){return x.t}),TL={},order=[],map={};
+ TAGS.forEach(function(t){TL[t[0]]=t[1]});
+ function add(name,t,tg){if(!map[name]){map[name]=[];order.push(name)}map[name].push({t:t,tag:tg,has:have.indexOf(t)>=0})}
+ SUGX[k].forEach(function(g){g[1].forEach(function(s){var p=s.split('|');if(!p[1])add(g[0],p[0],'')})});
+ var th={};
+ SUGX[k].forEach(function(g){g[1].forEach(function(s){var p=s.split('|');if(p[1]){var ts=p[1].split(','),n=TG2[ts[0]];(th[n]=th[n]||[]).push({t:p[0],tag:ts.map(function(x){return TL[x]}).join('＋'),has:have.indexOf(p[0])>=0})}})});
+ var out=order.map(function(n){return{g:n,r:map[n]}});
+ TG2O.forEach(function(n){if(th[n])out.push({g:n,r:th[n]})});
+ return out;
+}
+function openSug(k){
+ var ov=document.createElement('div');ov.className='ov';
+ function count(){
+  var n=0;ov.querySelectorAll('[data-ck]:not(:disabled)').forEach(function(c){if(c.checked)n++});
+  var b=ov.querySelector('[data-x=add]');if(b)b.textContent='加入所選（'+n+'）';
+  ov.querySelectorAll('details').forEach(function(d){var c=d.querySelectorAll('[data-ck]:not(:disabled):checked').length,s=d.querySelector('[data-gn]');if(s)s.textContent=c?'，已選 '+c:''});
+ }
+ var h=`<div class='sheet' style='animation:none'><h3>建議清單・${SL[k]}</h3><div class='time'>展開分類，勾選想要的項目，再按「加入所選」。</div><div style='display:flex;gap:8px;margin:10px 0'><button class='btn sm' data-x='all'>全部勾選</button><button class='btn sm' data-x='none'>全部取消</button></div>`;
+ sugGroups(k).forEach(function(g,i){
+  var left=g.r.filter(function(r){return !r.has}).length;
+  h+=`<details style='border-top:1.5px solid var(--ink);padding:10px 0'${i===0?' open':''}><summary>${g.g}<span class='time' style='font-family:var(--sans);font-weight:400'>（${g.r.length} 項<span data-gn></span>）</span></summary><div style='display:flex;gap:8px;margin:8px 0 2px'><button class='btn sm' data-gx='all'>此類全選</button><button class='btn sm' data-gx='none'>此類取消</button></div>`;
+  g.r.forEach(function(r){h+=`<label class='chk' style='cursor:pointer'><input type='checkbox' style='width:22px;height:22px;flex:none;padding:0;margin:0;align-self:center' data-ck='${esc(r.t)}'${r.has?' disabled checked':''}><span class='t'${r.has?` style='color:var(--mute)'`:''}>${esc(r.t)}${r.has?'（已加入）':''}</span>${r.tag?`<span class='pill' style='background:var(--card);flex:none'>${esc(r.tag)}</span>`:''}</label>`});
+  h+=`</details>`;
+ });
+ h+=`<div class='bar'><button class='btn' style='background:var(--card)' data-x='close'>關閉</button><button class='btn leaf' data-x='add'>加入所選</button></div></div>`;
+ ov.innerHTML=h;
+ function setAll(root,v){root.querySelectorAll('[data-ck]:not(:disabled)').forEach(function(c){c.checked=v});count()}
+ ov.addEventListener('click',function(e){
+  var t=e.target,x=t.getAttribute('data-x'),gx=t.getAttribute('data-gx');
+  if(t===ov||x==='close'){ov.remove();return}
+  if(x==='all'){setAll(ov,true);return}
+  if(x==='none'){setAll(ov,false);return}
+  if(gx){setAll(t.closest('details'),gx==='all');return}
+  if(x==='add'){
+   ov.querySelectorAll('[data-ck]:not(:disabled)').forEach(function(c){if(c.checked)(RO?MY[k]:S[k]).push(RO?{t:c.getAttribute('data-ck')}:{t:c.getAttribute('data-ck'),done:false})});
+   if(RO)saveMy();else save();lists();ov.remove();
+  }
+ });
+ ov.addEventListener('change',function(e){if(e.target.hasAttribute&&e.target.hasAttribute('data-ck'))count()});
+ document.body.appendChild(ov);count();
+}
+var PH={todos:'例：訂餐廳、買網卡',pre:'例：護照效期、歐元與瑞士法郎、旅平險',pack:'例：轉接頭（瑞士用 J 型）、保暖外套'};
+var MY={todos:[],pre:[],pack:[]};
+try{var _m=JSON.parse(localStorage.getItem(K+'-my'));if(_m)MY=Object.assign(MY,_m)}catch(e){}
+function saveMy(){try{localStorage.setItem(K+'-my',JSON.stringify(MY))}catch(e){}}
+function saveChk(){try{localStorage.setItem(K+'-chk',JSON.stringify(CH))}catch(e){}}
+function listOf(k){return RO?S[k].concat(MY[k]):S[k]}
+function addItem(k){
+ var inp=document.querySelector('[data-in="'+k+'"]'),v=inp&&inp.value.trim();if(!v)return;
+ if(RO){MY[k].push({t:v});saveMy()}else{S[k].push({t:v,done:false});save()}
+ lists();var n=document.querySelector('[data-in="'+k+'"]');if(n)n.focus();
+}
+function lists(){
+ ['todos','pre','pack'].forEach(function(k){
+  var base=S[k].length,arr=listOf(k);
+  if(RO)arr.forEach(function(x){x.done=!!CH[k+'|'+x.t]});
+  var done=arr.filter(function(x){return x.done}).length;
+  $('p-'+k).textContent=done+' / '+arr.length;
+  $('c-'+k).innerHTML=arr.map(function(x,i){var mine=RO&&i>=base;return'<div class="chk'+(x.done?' done':'')+'"><button class="box" data-k="'+k+'" data-t="'+i+'" aria-label="打勾">'+(x.done?'✓':'')+'</button><span class="t">'+esc(x.t)+(mine?' <span class="pill" style="background:var(--card)">我加的</span>':'')+'</span>'+((!RO||mine)?'<button class="x" data-k="'+k+'" data-r="'+i+'" aria-label="刪除">×</button>':'')+'</div>'}).join('')+
+  '<div class="add"><input data-in="'+k+'" placeholder="'+PH[k]+'" maxlength="60"><button class="btn leaf" data-k="'+k+'" data-a="1">加入</button></div>'+'<div class="add"><button class="btn sky" data-k="'+k+'" data-s="1">挑選建議項目</button></div>';
+ });
+}
+document.addEventListener('click',function(e){
+ var t=e.target,k=t.getAttribute&&t.getAttribute('data-k');if(!k||!S[k]||!Array.isArray(S[k])||t.closest('.sheet'))return;
+ var arr=listOf(k),base=S[k].length;
+ if(t.hasAttribute('data-t')){var x=arr[+t.getAttribute('data-t')];x.done=!x.done;if(RO){CH[k+'|'+x.t]=x.done;saveChk();lists();return}}
+ else if(t.hasAttribute('data-r')){var i=+t.getAttribute('data-r');if(RO){if(i<base)return;var rm=MY[k].splice(i-base,1)[0];delete CH[k+'|'+rm.t];saveMy();saveChk();lists();return}S[k].splice(i,1)}
+ else if(t.hasAttribute('data-a')){addItem(k);return}
+ else if(t.hasAttribute('data-s')){openSug(k);return}
+ else return;
+ save();lists();
+});
+document.addEventListener('keydown',function(e){
+ if(e.key==='Enter'&&e.target.hasAttribute&&e.target.hasAttribute('data-in'))addItem(e.target.getAttribute('data-in'));
+});
+
+/* backup */
+$('exp').onclick=function(){
+ var s=JSON.stringify(S);
+ form('備份資料',[{k:'d',l:'複製下面整段文字，存到備忘錄',t:'area'}],{d:s},function(){});
+ var ta=document.querySelector('.sheet textarea');if(ta){ta.rows=8;ta.select()}
+};
+$('imp').onclick=function(){
+ form('還原資料',[{k:'d',l:'貼上先前備份的文字',t:'area'}],{},function(o){
+  try{var d=JSON.parse(o.d);if(d&&typeof d==='object'){S=Object.assign({title:'我的旅行',dest:'',start:'',end:'',flights:[],items:{},todos:[],lodging:[],pre:[],pack:[]},d);save();cur=0;render()}}
+  catch(e){alert('格式不正確，請確認整段文字都有貼上')}
+ });
+};
+
+/* budget */
+var BF=[{k:'name',l:'項目名稱',p:'例：住宿、機票、交通通票'},{k:'amt',l:'金額',t:'number',p:'例：1200'},{k:'cur',l:'幣別',t:'select',o:CUR},{k:'paid',l:'已付款',t:'check'},{k:'note',l:'備註',t:'area',p:'付款方式、退費規則、截止日…'}];
+var BN=['機票','住宿','交通通票','展覽門票','保險','網卡／eSIM'];
+function row(l,v,big){return `<div style='display:flex;justify-content:space-between;gap:12px;padding:3px 0'><span class='time'>${l}</span><span${big?` class='place'`:''}>${v}</span></div>`}
+function budgetSum(){
+ var big=sumCur(S.budget),day=[];
+ days().forEach(function(d){day=day.concat(S.items[d]||[])});
+ var dsum=sumCur(day),paid=sumCur(S.budget.filter(function(b){return b.paid})),all={};
+ CUR.forEach(function(c){var v=(big[c]||0)+(dsum[c]||0);if(v)all[c]=v});
+ var h=row('大項合計',fmtSum(big))+row('　其中已付款',fmtSum(paid))+row('每日行程預計',fmtSum(dsum))+`<div style='border-top:1px solid var(--ink);margin:6px 0'></div>`+row('總預算',fmtSum(all),true);
+ if(Object.keys(all).length){var t=toTwd(all);if(t===null)h+=row('約合新台幣','填入下方匯率後顯示');else if(Object.keys(all).some(function(c){return c!=='TWD'}))h+=row('約合新台幣',money(Math.round(t),'TWD'),true)}
+ $('budSum').innerHTML=h;
+}
+function budget(){
+ $('budChips').innerHTML=BN.map(function(n){return `<button class='btn sm' data-bn='${n}'>＋ ${n}</button>`}).join('');
+ $('budList').innerHTML=S.budget.length?S.budget.map(function(b){return `<div class='card'><div style='display:flex;justify-content:space-between;align-items:baseline;gap:8px'><span class='place'>${esc(b.name)}</span><span class='place'>${money(b.amt,b.cur)}</span></div>${b.paid?`<div class='tags'><span class='pill' style='background:var(--leaf)'>已付款</span></div>`:''}${b.note?`<div class='time'>${esc(b.note)}</div>`:''}<div class='acts'><button class='btn sm' data-eb='${b.id}'>編輯</button></div></div>`}).join(''):`<div class='empty'>還沒有大項，點上面的快速新增或右上角按鈕</div>`;
+ ['EUR','CHF'].forEach(function(c){$('r'+c).value=S.rate[c]||''});
+ budgetSum();
+}
+$('addBud').onclick=function(){form('新增預算大項',BF,{cur:'EUR'},function(o){o.id=uid();S.budget.push(o);save();budget()})};
+$('budChips').onclick=function(e){var n=e.target.getAttribute('data-bn');if(!n)return;form('新增預算大項',BF,{name:n,cur:'EUR'},function(o){o.id=uid();S.budget.push(o);save();budget()})};
+$('budList').onclick=function(e){var id=e.target.getAttribute('data-eb');if(!id)return;var b=S.budget.filter(function(x){return x.id===id})[0];form('編輯預算項目',BF,b,function(o){Object.assign(b,o);save();budget()},function(){S.budget=S.budget.filter(function(x){return x.id!==id});save();budget()})};
+['EUR','CHF'].forEach(function(c){$('r'+c).oninput=function(){S.rate[c]=this.value;save();budgetSum()}});
+/* pay link */
+function pay(){
+ var p=S.pay||{},el=$('payCard');
+ if(p.url){
+  var u=/^https?:\/\//i.test(p.url)?p.url:'https://'+p.url;
+  el.innerHTML=`<div class='place'>${esc(p.name||'分帳')}</div>${p.note?`<div class='time'>${esc(p.note)}</div>`:''}<div class='time' style='word-break:break-all;margin-top:6px'>${esc(u)}</div><div class='acts' style='justify-content:flex-start;margin-top:10px'><a class='btn leaf' style='text-decoration:none' href="${esc(u)}" target='_blank' rel='noopener noreferrer'>前往分帳 app</a></div>`;
+ }else el.innerHTML=`<div class='empty'>${RO?'尚未設定分帳連結':'點右上角「設定連結」，貼上分帳 app 的邀請連結'}</div>`;
+}
+$('editPay').onclick=function(){form('分帳連結',[{k:'name',l:'名稱',p:'例：Splitwise 群組、Tricount'},{k:'url',l:'連結',t:'url',p:'貼上邀請連結'},{k:'note',l:'說明',t:'area',p:'例：點進去加入群組，用自己的名字'}],S.pay||{},function(o){S.pay=o.url?o:null;save();pay()},S.pay&&S.pay.url?function(){S.pay=null;save();pay()}:null)};
+function render(){S.budget=S.budget||[];S.rate=S.rate||{EUR:'',CHF:''};hero();flights();itin();stay();budget();pay();lists()}
+render();
+/* shared mode */
+function applyTrip(d){['title','dest','start','end','flights','items','lodging','budget','rate','todos','pre','pack','pay','ts'].forEach(function(k){if(d[k]!==undefined)S[k]=JSON.parse(JSON.stringify(d[k]))});S.rate=S.rate||{EUR:'',CHF:''};try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}render()}
+(async function(){
+ if(typeof claude==='undefined')return;
+ try{
+  var db=await claude.use('db');if(!db)return;
+  var user=await claude.use('user');
+  var own=user?await user.isOwner():false;
+  DB=db;RO=!own;
+  document.body.classList.toggle('ro',RO);
+  $('modeNote').textContent=RO?'旅伴檢視模式：行程為唯讀，待辦、出發前、行李清單可以自己新增與勾選':'共用中：旅伴用連結開啟，就能即時看到你的行程';
+  render();
+  var first=true;
+  DB.doc('trip/main').onSnapshot(function(snap){
+   if(snap.metadata.hasPendingWrites)return;
+   var d=snap.exists?snap.data():null;
+   if(RO){if(d)applyTrip(d);return}
+   if(snap.metadata.fromCache&&first)return;
+   if(d&&(d.ts||0)>(S.ts||0))applyTrip(d);else if(first&&(!d||(d.ts||0)<(S.ts||0)))pushTrip();
+   first=false;
+  },function(){});
+ }catch(e){}
+})();
+})();
+</script>
+</body>
+</html>
